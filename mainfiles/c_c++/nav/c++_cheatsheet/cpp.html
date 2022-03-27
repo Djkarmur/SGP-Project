@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cpp_style.css">
+    <title>Liquified Documentation</title>
+</head>
+<body>
+        <div class="side-bar">
+            <h1>LC++ Documentation</h1>
+
+            <h2>C++ Programming</h2>
+
+            <h3><a href="#basics">Basics</a></h3>
+            <h3><a href="#data-types">Data types</a></h3>
+            <h3><a href="#escape-sequences">Escape sequences</a></h3>
+            <h3><a href="#comments">Comments</a></h3>
+            <h3><a href="#strings">Strings</a></h3>
+            <h3><a href="#maths">Maths</a></h3>
+            <h3><a href="#decision-making-instructions">Decision Making Instructions</a></h3>
+            <h3><a href="#iterative-statements">Iterative Statements</a></h3>
+            <h3><a href="#references">References</a></h3>
+            <h3><a href="#function-recursion">Function & Recursion</a></h3>
+            <h3><a href="#object-oriented-programming">Object Oriented Programming</a></h3>
+            <h3><a href="#file-handling">File Handling</a></h3>
+            <h3><a href="#open-modes">Open modes</a></h3>
+            <h3><a href="#exception-handling">Exception Handling</a></h3>
+            
+        </div>  
+
+        <main>
+            <section id="basics">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Basics<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                 <h2>Boilerplate</h2>
+                                 <br>
+<pre>
+#include &lt;iostream&gt;
+using namespace std;
+int main() {
+cout << "Welcome To CodeWithHarry";
+return 0;
+}
+</pre>
+<br>
+                       <h2>cout &lt;&lt;</h2>
+                       <br>
+<pre>
+cout <<"This is C++ Programming";
+</pre>                       
+<br>
+                        <h2>cin >></h2>
+                        <br>
+<pre>
+cin >> variable_name;
+</pre>                      
+<br>
+                     
+                             </code>
+                         </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="data-types">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Data Types<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                 <h2>Character Types</h2>
+                                 <br>
+<pre>
+char variable_name;
+</pre>                 
+<br>                
+                           <h2>Integer Type</h2>
+                           <br>
+<pre>
+int variable_name;
+</pre>                      
+<br>                        
+                           <h2>Float type</h2>
+                           <br>
+<pre>
+float variable_name;
+</pre>                    
+<br>         
+                          <h2>Double type</h2>
+                          <br>
+<pre>
+double variable_name;
+</pre>  <br>                      
+                         <h2>Void type</h2>
+                         <br>
+<pre>
+void
+</pre>   <br>                
+                        <h2>Boolean type</h2>
+                        <br>
+<pre>
+bool
+</pre>                      
+                             </code>
+                             
+                         </div>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <br>
+            <section id="escape-sequences">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Escape Sequences<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                            <code>
+                                <h2>Alarm</h2>
+                                <br>
+<pre>
+\a
+</pre>                                
+<br>
+                                <h2>Backspace</h2>
+<br>
+<pre>
+\b
+</pre>                                
+<br>
+                                <h2>Form feed</h2>
+<br>
+<pre>
+\f
+</pre>                                
+<br>
+                                <h2>New line</h2>
+<br>
+<pre>
+\n
+</pre>                                
+<br>
+                                <h2>Carriage return</h2>
+<br>
+<pre>
+\r
+</pre>                                
+<br>
+                                <h2>Tab</h2>
+<br>
+<pre>
+\t
+</pre>                                
+<br>
+                                <h2>Backslash</h2>
+<br>
+<pre>
+\\
+</pre>                                
+<br>
+                                <h2>Single quote</h2>
+<br>
+<pre>
+\`
+</pre>                                
+<br>
+                                <h2>Question mark</h2>
+<br>
+<pre>
+\?
+</pre>                                
+<br>
+                                <h2>Octal No.</h2>
+<br>
+<pre>
+\nnn
+</pre>                                
+<br>
+                                <h2>Hexadecimal No.</h2>
+<br>
+<pre>
+\xhh
+</pre>                                
+<br>
+                                <h2>Null</h2>
+<br>
+<pre>
+\0
+</pre>                                
+<br>
+
+                            </code>
+                     
+                             
+                         </div>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <br>
+            <section id="comments">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Comments<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                <h2>Single line comment</h2>
+                                <br>
+<pre>
+// It's a single line comment
+</pre>                      
+<br>                   
+                               <h2>Multi-line comment</h2>
+<br>
+<pre>
+/* It's a 
+multi-line
+comment
+*/
+</pre>                      
+<br>                   
+ 
+                     
+                             </code>
+                            </div>
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+
+
+                             <section id="strings">
+                                <header>
+                                    <h1><span class="red-brackets">&lt;</span>Strings<span class="red-brackets">&gt;</span></h1>
+                                </header>
+                                <article>
+                                    <p>
+                                         <br> 
+                                         <div class="example">
+                                             <code>
+                                                <h2>Declaring String</h2>
+                                                <br>
+ <pre>
+// Include the string library
+#include &lt;string&gt;
+// String variable
+string variable1 = "Hello World";
+</pre>                      
+                <br>                   
+                                               <h2>append function</h2>
+                <br>
+<pre>
+string firstName = "Harry ";
+string lastName = "Bhai";
+string fullName = firstName.append(lastName);
+cout << fullName;    
+</pre>                      
+                <br>                   
+                                               <h2>length function</h2>
+                <br>
+<pre>
+string variable1 = "CodeWithHarry";
+cout << "The length of the string is: " << variable1.length();  
+</pre>                      
+                <br>                   
+                                               <h2>Accessing and changing string characters</h2>
+                <br>
+<pre>
+string variable1 = "Hello World";
+variable1[1] = 'i';
+cout << variable1;   
+</pre>                      
+                <br>                   
+                
+                     </code>                
+                         </div>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <br>
+            <section id="maths">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Maths<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                <h2>max function</h2>
+                                <br>
+<pre>
+cout << max(25, 140);
+</pre>                      
+<br>                   
+                               <h2>min function</h2>
+<br>
+<pre>
+cout << min(55, 50);
+</pre>                      
+<br>                   
+                               <h2>sqrt function</h2>
+<br>
+<pre>
+#include &lt;cmath&gt;
+cout << sqrt(144);
+</pre>                      
+<br>                   
+                               <h2>ceil function</h2>
+<br>
+<pre>
+ceil(x)
+</pre>                      
+<br>                   
+                               <h2>floor function</h2>
+<br>
+<pre>
+floor(x)
+</pre>                      
+<br>                   
+                                <h2>pow function</h2>
+<br>
+<pre>
+pow(x, y)
+</pre>                      
+<br>                   
+                             </code>
+                            </div>
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section id="decision-making-instructions">
+                    <header>
+                        <h1><span class="red-brackets">&lt;</span>Decision Making Instructions<span class="red-brackets">&gt;</span></h1>
+                    </header>
+                    <article>
+                        <p>
+                             <br> 
+                             <div class="example">
+                                 <code>
+                                    <h2>If Statement</h2>
+                                    <br>
+<pre>
+if (condition) {
+// This block of code will get executed, if the condition is True
+}     
+</pre>                      
+    <br>                   
+                                   <h2>If-else Statement</h2>
+    <br>
+<pre>
+if (condition) {
+// If condition is True then this block will get executed
+} else {
+// If condition is False then this block will get executed
+}
+</pre>                      
+    <br>                   
+                                   <h2>if else-if Statement</h2>
+    <br>
+<pre>
+if (condition) {
+ // Statements;
+ }
+ else if (condition){
+ // Statements;
+ }
+ else{
+ // Statements
+}   
+</pre>                      
+<br>                   
+                                   <h2>Ternary Operator</h2>
+<br>
+<pre>
+variable = (condition) ? expressionTrue : expressionFalse; 
+</pre>                      
+<br>                   
+                                   <h2>Switch Case Statement</h2>
+<br>
+<pre>
+switch (expression) 
+{
+case constant-expression: 
+statement1;
+statement2;
+break;
+case constant-expression: 
+statement;
+break;
+...
+default: 
+statement;
+}
+</pre>                      
+<br>                   
+                         
+                                 </code>
+                                </div>
+                            </p>
+                        </article>
+                    </section>
+                     <hr>
+                     <br>
+                     <section id="iterative-statements">
+                        <header>
+                            <h1><span class="red-brackets">&lt;</span>Iterative Statements<span class="red-brackets">&gt;</span></h1>
+                        </header>
+                        <article>
+                            <p>
+                                 <br> 
+                                 <div class="example">
+                                     <code>
+                                        <h2>while Loop</h2>
+                                        <br>
+<pre>
+while (/* condition */)
+{
+/* code block to be executed */
+} 
+</pre>                      
+        <br>                   
+                                       <h2>do-while loop</h2>
+        <br>
+<pre>
+do
+{
+/* code */
+} while (/* condition */);    
+</pre>                      
+        <br>                   
+                                       <h2>for loop</h2>
+        <br>
+<pre>
+for (int i = 0; i < count; i++)
+{
+/* code */
+}    
+</pre>                      
+    <br>                   
+                                       <h2>Break Statement</h2>
+    <br>
+<pre>
+break;     
+</pre>                      
+    <br>                   
+                                       <h2>Continue Statement</h2>
+    <br>
+<pre>
+continue;
+</pre>                      
+    <br>                   
+                             
+                                     </code>
+                                    </div>
+                                </p>
+                            </article>
+                        </section>
+                        <hr>
+                        <br>
+                        <section id="references">
+                            <header>
+                                <h1><span class="red-brackets">&lt;</span>References<span class="red-brackets">&gt;</span></h1>
+                            </header>
+                            <article>
+                                <p>
+                                     <br> 
+                                     <div class="example">
+                                         <code>
+                                            <h2>Creating References</h2>
+                                            <br>
+<pre>
+string var1 = "Value1"; // var1 variable
+string &var2 = var1; // reference to var1 
+</pre>                      
+            <br>                   
+                                           <h2>Pointers</h2>
+            <br>
+<pre>
+datatype *var_name; 
+var_name = &variable2;    
+</pre>                      
+            <br>                   
+            
+                                         </code>
+                                        </div>
+                                    </p>
+                                </article>
+                            </section>
+                            <hr>
+                            <br>
+                            <section id="function-recursion">
+                                <header>
+                                    <h1><span class="red-brackets">&lt;</span>Functions & Recursion<span class="red-brackets">&gt;</span></h1>
+                                </header>
+                                <article>
+                                    <p>
+                                         <br> 
+                                         <div class="example">
+                                             <code>
+                                                <h2>Function Definition</h2>
+                                                <br>
+<pre>
+return_type function_name(data_type parameter...){ 
+//code to be executed 
+}  
+</pre>                      
+                <br>                   
+                                               <h2>Function Call</h2>
+                <br>
+<pre>
+function_name(arguments);   
+</pre>                      
+                <br>                   
+                                               <h2>Recursion</h2>
+                <br>
+<pre>
+void recurse()
+{
+... .. ...
+recurse();
+... .. ...
+}
+</pre>       
+                
+                                             </code>
+                                            </div>
+                                        </p>
+                                    </article>
+                                </section>
+                                <hr>
+                                <br>
+                                <section id="object-oriented-programming">
+                                    <header>
+                                        <h1><span class="red-brackets">&lt;</span>object-oriented-programming<span class="red-brackets">&gt;</span></h1>
+                                    </header>
+                                    <article>
+                                        <p>
+                                             <br> 
+                                             <div class="example">
+                                                 <code>
+                                                    <h2>class</h2>
+                                                    <br>
+<pre>
+class Class_name {
+public: // Access specifier
+// fields
+// functions
+// blocks
+};
+</pre>                      
+                    <br>                   
+                                                   <h2>Object</h2>
+                    <br>
+<pre>
+Class_name ObjectName;         
+</pre>                      
+                    <br>                   
+                                                   <h2>Constructors</h2>
+                    <br>
+<pre>
+class className { // The class
+public: // Access specifier
+className() { // Constructor
+cout << "Code With Harry";
+}
+};
+
+int main() {
+className obj_name; 
+return 0;
+}
+</pre>       
+ <br>
+                                                   <h2>Encapsulation</h2>
+ <br>
+<pre>
+#include&lt;iostream&gt;
+using namespace std; 
+class ExampleEncap{ 
+private: 
+/* Since we have marked these data members private, 
+* any entity outside this class cannot access these 
+* data members directly, they have to use getter and 
+* setter functions. 
+*/ 
+int num; 
+char ch; 
+public: 
+/* Getter functions to get the value of data members. 
+* Since these functions are public, they can be accessed 
+* outside the class, thus provide the access to data members 
+* through them 
+*/ 
+int getNum() const { 
+return num; 
+} 
+char getCh() const { 
+return ch; 
+} 
+/* Setter functions, they are called for assigning the values 
+* to the private data members. 
+*/ 
+void setNum(int num) { 
+this->num = num; 
+} 
+void setCh(char ch) { 
+this->ch = ch; 
+} 
+}; 
+int main(){ 
+ExampleEncap obj; 
+obj.setNum(100); 
+obj.setCh('A'); 
+cout&lt;&lt;obj.getNum()&lt;&lt;endl; 
+cout&lt;&lt;obj.getCh()&lt;&lt;endl; 
+return 0; 
+}
+</pre>       
+<br>
+  
+                    
+                                 </code>
+                           </div>
+                    </p>
+                </article>
+            </section>
+             <hr>
+             <br>
+             <section id="file-handling">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>File Handling<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                <h2>Creating and writing to a text file</h2>
+                                <br>
+<pre>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+using namespace std;
+
+int main() {
+// Create and open a text file
+ofstream MyFile("filename.txt");
+
+// Write to the file
+MyFile << "File Handling in C++";
+
+// Close the file
+MyFile.close();
+}
+</pre>                      
+<br>                   
+                               <h2>Reading the file</h2>
+<br>
+<pre>
+getline()
+</pre>                      
+<br>                   
+                               <h2>Opening a File</h2>
+<br>
+<pre>
+void open(const char* file_name,ios::openmode mode);
+</pre>                      
+<br>                   
+    
+                             </code>
+                            </div>
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section id="open-modes">
+                    <header>
+                        <h1><span class="red-brackets">&lt;</span>Open Modes<span class="red-brackets">&gt;</span></h1>
+                    </header>
+                    <article>
+                        <p>
+                             <br> 
+                             <div class="example">
+                                 <code>
+                                    <h2>in</h2>
+                                    <br>
+<pre>
+fs.open ("test.txt", std::fstream::in)    
+</pre>                      
+    <br>                   
+                                   <h2>out</h2>
+    <br>
+<pre>
+fs.open ("test.txt", std::fstream::out)
+</pre>                      
+    <br>                   
+                                   <h2>binary</h2>
+    <br>
+<pre>
+fs.open ("test.txt", std::fstream::binary)    
+</pre>                      
+    <br>                   
+                                   <h2>app</h2>
+    <br>
+<pre>
+fs.open ("test.txt", std::fstream::app)    
+</pre>                      
+    <br>                   
+                                   <h2>ate</h2>
+    <br>
+<pre>
+fs.open ("test.txt", std::fstream::ate)   
+</pre>                      
+    <br>                   
+                                   <h2>trunc</h2>
+    <br>
+<pre>
+fs.open ("test.txt", std::fstream::trunc)    
+</pre>                      
+    <br>                   
+                                    <h2>nocreate</h2>
+    <br>
+<pre>
+fs.open ("test.txt", std::fstream::nocreate)  
+</pre>                      
+    <br>                   
+                                    <h2>noreplace</h2>
+    <br>
+<pre>
+fs.open ("test.txt", std::fstream::noreplace)    
+</pre>                      
+    <br>                   
+                                    <h2>Closing a file</h2>
+    <br>
+<pre>
+myfile.close()  
+</pre>                      
+    <br>                   
+        
+                                 </code>
+                                </div>
+                            </p>
+                        </article>
+                    </section>
+                    <hr>
+                    <br>
+                    <section id="exception-handling">
+                        <header>
+                            <h1><span class="red-brackets">&lt;</span>Exception Handling<span class="red-brackets">&gt;</span></h1>
+                        </header>
+                        <article>
+                            <p>
+                                 <br> 
+                                 <div class="example">
+                                     <code>
+                                        <h2>try and catch block</h2>
+                                        <br>
+<pre>
+try {
+// code to try
+ throw exception; // If a problem arises, then throw an exception
+}
+catch () {
+// Block of code to handle errors
+}  
+</pre>                      
+        <br>              
+            
+                                     </code>
+                                    </div>
+                                </p>
+                            </article>
+                        </section>
+        
+    
+
+            
+                                    
+
+                
+            
+            
+        
+    
+        
+    
+
+            
+            
+        </main>
+</body>
+</html>

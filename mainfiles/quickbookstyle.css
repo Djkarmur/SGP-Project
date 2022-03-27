@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar
+{
+        display: none;
+}
+
+body
+{
+    display: flex;
+}
+
+:root
+{
+    --background: rgb(23, 23, 53);
+    --foreground: rgb(0, 255, 221);
+}
+
+.side-nav
+{
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 360px;
+    background-color: var(--background);
+    border-right: 5px solid grey;
+}
+
+.side-nav-header
+{
+    padding: 10px;
+    color: var(--foreground);
+    border-bottom: 3px solid var(--foreground);
+    margin-bottom: 20px;
+}
+
+.flipbooks
+{
+    margin-left: 360px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.548);
+}
+
+.book-tags
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px 0 5px;
+    margin-bottom: 16px;
+}
+
+.book-tags:hover
+{
+    border-left: 3px solid var(--foreground);
+}
+
+.book-tags a
+{
+    width: 280px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.book-tags img
+{
+    height: 60px;
+    width: 45px;
+}
+
+

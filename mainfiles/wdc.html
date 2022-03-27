@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wdcstyle.css">
+    <title>Liquified Documentation</title>
+</head>
+<body>
+        <div class="side-bar">
+            <h1>LWD Documentation</h1>
+
+            <h2>HTML</h2>
+
+            <h3><a href="#document-summary">Document Summary</a></h3>
+            <h3><a href="#document-information">Document Information</a></h3>
+            <h3><a href="#document-structure">Document Structure</a></h3>
+            <h3><a href="#text-formatting">Text Formatting</a></h3>
+            <h3><a href="#links">Links</a></h3>
+            <h3><a href="#images">Images</a></h3>
+            <h3><a href="#lists">Lists</a></h3>
+            <h3><a href="#forms">Forms</a></h3>
+            <h3><a href="#input-type-attribute">Input Type Attribute</a></h3>
+            <h3><a href="#select-attribute">Select Attribute</a></h3>
+            <h3><a href="#option-attribute">Option Attribute</a></h3>
+            <h3><a href="#tables">Tables</a></h3>
+            <h3><a href="#objects-iframes">Objects and iFrames</a></h3>
+            <h3><a href="#iframe-attributes">iFrame Attributes</a></h3>
+            <h3><a href="#embed-attributes">Embed Attributes</a></h3>
+            <h3><a href="#html-new-tags">HTML5 New Tags</a></h3>
+        </div>  
+
+        <main>
+            <section id="document-summary">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Document Summary<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> Let us see how we can break the code up in different components: <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;html&gt;...&lt;/html&gt;&nbsp;
+                        </code> <br>
+
+                        This tag specifies that the webpage is written
+                        in HTML. It appears at the very first and last line of the webpage. It is mainly used to show that the page uses HTML5 – the latest version of the language. Also known as the root element, this tag can be thought of as a parent tag for every other tag used in the page. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;head&gt;...&lt;/head&gt;&nbsp;
+                        </code> <br>
+
+                        This tag is used to specify meta data about
+                        the webpage. It includes the webpage’s name,
+                        its dependencies (JS and CSS scripts), font usage etc. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;title&gt;...&lt;/title&gt;&nbsp;
+                        </code> <br>
+
+                        As the name suggests, this tag contains
+                        the title/name of the webpage. You can see this
+                        in your browser’s title bar for every webpage open in the browser. Search engines use this tag to extract the topic of the webpage, which is quite convenient when ranking relevant search results. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;body&gt;...&lt;/body&gt;&nbsp;
+                        </code> <br>
+
+                        Everything the user sees on a webpage is written inside this tag. It is a container for all the contents of the webpage. <br> <br>
+                        
+                        <h2>Example:</h2> <br>
+                        
+                        
+                            <div class="example">
+                                <code>
+                                    &lt;html&gt; <br>
+                                    &lt;head&gt; <br>
+                                    &lt;title&gt;My First Website&lt;/title&gt; <br>
+                                    &lt;/head&gt; <br>
+                                    &lt;body&gt; <br>
+                                    &lt;/body&gt; <br>
+                                    &lt;/html&gt; <br>
+                                </code>
+                            </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="document-information">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Document Information<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <code class="syntax">
+                            &nbsp;&lt;base/&gt;&nbsp;
+                        </code> <br>
+
+                        Used to specify the base URL of your site, this tag makes linking to internal links on your site cleaner.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;meta/&gt;&nbsp;
+                        </code> <br>
+
+                        This is the meta data tag for the webpage.
+                        Can be useful for mentioning the page’s author, keywords, original published date etc.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;link/&gt;&nbsp;
+                        </code> <br>
+
+                        This is used to link to scripts external to the webpage. Typically utilized for including stylesheets.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;style&gt;...&lt;/style&gt;&nbsp;
+                        </code> <br>
+
+                        The style tag can be used as an alternative to
+                        an external style sheet, or complement it. Includes the webpage’s appearance information.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;script&gt;...&lt;/script&gt;&nbsp;
+                        </code> <br>
+
+                        Used to add code snippets, typically in JavaScript, to make webpage dynamic. It can also be used to just link to an external script.<br> <br>
+                        
+                        <h2>Example:</h2> <br>
+                        
+                        
+                            <div class="example">
+                                <code>
+                                    &lt;html&gt; <br>
+                                    &lt;head&gt; <br>
+                                    &lt;meta charset="utf-8"&gt; <br>
+                                    &lt;base href="http://myfirstwebsite.com" target="_blank" /&gt; <br>
+                                    &lt;title&gt;My Beautiful Website&lt;/title&gt; <br>
+                                    &lt;link rel="stylesheet" href="/css/master.css"&gt;  <br>&lt;script type="text/  javascript"&gt; <br>
+                                    var dummy = 0; <br>
+                                    &lt;/script&gt;<br>
+                                    &lt;/head&gt; <br>
+                                    &lt;body&gt; <br>
+                                    &lt;/body&gt; <br>
+                                    &lt;/html&gt; <br>
+                                </code>
+                            </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            
+
+            <section id="document-structure">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Document Structure<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;h1..h6&gt;...&lt;/h1..h6&gt;&nbsp;
+                        </code> <br>
+
+                        Six different variations of writing a heading. &lt;h1&gt; has the largest font size, while &lt;h6&gt; has the smallest. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;div&gt;...&lt;/div&gt;&nbsp;
+                        </code> <br>
+
+                        A webpage’s content is usually divided into blocks, specified by the div tag.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;span&gt;...&lt;/span&gt;&nbsp;
+                        </code> <br>
+
+                        This tag injects inline elements, like an image, icon, emoticon without ruining the formatting / styling of the page. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;p&gt;...&lt;/p&gt;&nbsp;
+                        </code> <br>
+
+                        Plain text is placed inside this tag. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;br/&gt;&nbsp;
+                        </code> <br>
+
+                        A line break for webpages. Is used when wanting to write a new line. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;hr/&gt;&nbsp;
+                        </code> <br>
+
+                        Similar to the above tag. But in addition to switching to the next line, this tag also draws a horizontal bar to indicate the end
+                        of the section. <br> <br>
+                        
+                        <h2>Example:</h2> <br>
+                        
+                        
+                            <div class="example">
+                                <code>
+                                    &lt;div&gt; <br>
+                                    &lt;h1&gt;Top 5 Greatest Films&lt;/h1&gt; <br>
+                                    &lt;p&gt;These are considered the greatest &lt;span&gt;reel-icon&lt;/span&gt; of all time &lt;/p&gt; <br> &lt;hr/&gt; <br>
+                                    &lt;h2&gt;1. The Godfather&lt;/h2&gt; <br>
+                                    &lt;p&gt;This 1972 classic stars Marlon Brando and Al Pacino.&lt;/p&gt; <br>
+                                    &lt;/div&gt;
+                                </code>
+                            </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="text-formatting">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Text Formatting<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <code class="syntax">
+                            &nbsp;&lt;strong&gt;...&lt;/strong&gt;&nbsp;
+                        </code> <br>
+
+                        Makes text bold. Used to emphasize a point<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;b&gt;...&lt;/b&gt;&nbsp;
+                        </code> <br>
+
+                        Alternative to the above tag, also creates bold text.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;em&gt;...&lt;/em&gt;&nbsp;
+                        </code> <br>
+
+                        Another emphasis tag, but this displays text in italics.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;i&gt;...&lt;/i&gt;&nbsp;
+                        </code> <br>
+
+                        Also used to display text in italics, but does not emphasize it like the above tag.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;tt&gt;...&lt;/tt&gt;&nbsp;
+                        </code> <br>
+
+                        Formatting for typewriter-like text. No longer supported in HTML5.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;strike&gt;...&lt;/strike&gt;&nbsp;
+                        </code> <br>
+
+                        Another old tag, this is used to draw a line at the center of the text, so as to make it appear unimportant or no longer useful.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;cite&gt;...&lt;/cite&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for citing author of a quote.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;del&gt;...&lt;/del&gt;&nbsp;
+                        </code> <br>
+
+                        Pre-formatted, ‘monospace’ text laid out with whitespace inside the element intact.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;ins&gt;...&lt;/ins&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes text that has been inserted into the webpage.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;blockquote&gt;...&lt;/blockquote&gt;&nbsp;
+                        </code> <br>
+
+                        Quotes often go into this tag. Is used in tandem with the &lt;cite&gt; tag.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;q&gt;...&lt;/q&gt;&nbsp;
+                        </code> <br>
+
+                        Similar to the above tag, but for shorter quotes.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;abbr&gt;...&lt;/abbr&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes abbreviations, along with the full forms.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;acronym&gt;...&lt;/acronym&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for acronyms. No HTML5 support.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;address&gt;...&lt;/address&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for specifying author’s contact details.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;dfn&gt;...&lt;/dfn&gt;&nbsp;
+                        </code> <br>
+
+                        Tag dedicated for definitions.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;code&gt;...&lt;/code&gt;&nbsp;
+                        </code> <br>
+
+                        Tag dedicated for definitions.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;sub&gt;...&lt;/sub&gt;&nbsp;
+                        </code> <br>
+
+                        Used for writing a subscript (smaller font just below the mid-point of normal font). Example: ax<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;sup&gt;...&lt;/sup&gt;&nbsp;
+                        </code> <br>
+
+                        Similar to the above tag, but for superscripting.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;small&gt;...&lt;/small&gt;&nbsp;
+                        </code> <br>
+
+                        Reduces text size. In HTML5, it often refers to redundant or invalid information.
+                        <br> <br>
+
+                        <h2>Example:</h2> <br>
+                        
+                        
+                            <div class="example">
+                                <code>
+                                    &lt;p&gt;&lt;strong&gt;Bold text&lt;/strong&gt; Regular text &lt;em&gt; <br> some words in italics&lt;/em&gt; regular text once again.&lt;/p&gt;
+                                    <br> &lt;blockquote&gt;
+                                    <br> Anyone who has never made a mistake has never tried anything new. <br>&lt;cite&gt;- Albert Einstein&lt;/cite&gt; &lt;/blockquote&gt;
+                                    <br>&lt;pre&gt;
+                                    <br>Some pre-formatted text
+                                    <br>&lt;/pre&gt;
+                                    <br>&lt;p&gt;A code snippet: &lt;code&gt;some code&lt;/code&gt;&lt;/p&gt;
+                                </code>
+                            </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="links">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Links<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;a href=""&gt;...&lt;/a&gt;&nbsp;
+                        </code> <br>
+
+                        Anchor tag. Primarily used for including hyperlinks.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;a href="mailto:"&gt;...&lt;/a&gt;&nbsp;
+                        </code> <br>
+
+                        Tag dedicated to sending emails.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;a href=”tel://###-###”&gt;...&lt;/a&gt;&nbsp;
+                        </code> <br>
+
+                        Anchor tag for mentioning contact numbers. As the numbers are clickable, this can be particularly beneficial for mobile users. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;a name=”name”&gt;...&lt;/a&gt;&nbsp;
+                        </code> <br>
+
+                        This tag can be used to quickly navigate to a different part of the webpage. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;a href=”#name”&gt;...&lt;/a&gt;&nbsp;
+                        </code> <br>
+
+                        A variation of the above tag, this is only meant to navigate to a div section of the webpage. 
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="images">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Images<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;img/&gt;&nbsp;
+                        </code> <br>
+
+                        A tag to display images in the webpage.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;src="url"&nbsp;
+                        </code> <br>
+
+                        The URL or path where the image is located on your drive or on the web.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;alt="text"&nbsp;
+                        </code> <br>
+
+                        The text written here is displayed when user hovers mouse over the image. Can be used to give additional details of the image.
+                         <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;height=""&nbsp;
+                        </code> <br>
+
+                        Specifies image height in pixels or percentages. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;width=""&nbsp;
+                        </code> <br>
+
+                        Specifies image width in pixels or percentages. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;align=""&nbsp;
+                        </code> <br>
+
+                        The relative alignment of the image. Can change with changes to other elements in the webpage. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;border=""&nbsp;
+                        </code> <br>
+
+                        Specifies border thickness of the image. If not mentioned, defaults to 0. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;map&gt;...&lt;/map&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes an interactive (clickable) image. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;map name=""&gt;...&lt;/map&gt;&nbsp;
+                        </code> <br>
+
+                        Name of the map associated between the image and the map. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;area/&gt;&nbsp;
+                        </code> <br>
+
+                        Specifies image map area. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;shape=""&nbsp;
+                        </code> <br>
+
+                        Shape of the area. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;coords=""&nbsp;
+                        </code> <br>
+
+                        Coordinates of the vital information of the shape. Example: vertices for rectangles, center/radius for circles. <br> <br>
+
+                        <h2>Example:</h2> <br>
+
+                        <div class="example">
+                            <code>
+                                &lt;img src="planets.gif" width="145" height="126" <br>
+                                alt="Planets" usemap="#planetmap"&gt; <br>
+                                &lt;map name="planetmap"&gt; <br>
+                                &lt;area shape="rect" coords="0,0,60,100" <br>
+                                 href="sun.html" alt="Sun"&gt; <br>
+                                &lt;area shape="circle" coords="90,58,3" <br>
+                                href="mercur.htm" alt="Mercury"&gt; <br>
+                                &lt;area shape="circle" coords="124,58,8" <br>
+                                href="venus.htm&lt;" alt="Venus"&gt; <br>
+                                &lt;/map&gt;
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="lists">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Lists<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;ol&gt;...&lt;/ol&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for ordered or numbered list of items. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;ul&gt;...&lt;/ul&gt;&nbsp;
+                        </code> <br>
+
+                        Contrary to the above tag, used for unordered list of items. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;li&gt;...&lt;/li&gt;&nbsp;
+                        </code> <br>
+
+                        Individual item as part of a list. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;dl&gt;...&lt;/dl&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for list of items with definitions. <br> <br>
+
+
+                        <code class="syntax">
+                            &nbsp;&lt;dt&gt;...&lt;/dt&gt;&nbsp;
+                        </code> <br>
+
+                        The definition of a single term inline with body content. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;dd&gt;...&lt;/dd&gt;&nbsp;
+                        </code> <br>
+
+                        The description for the defined term. <br> <br>
+
+                        <h2>Example:</h2> <br>
+
+                        <div class="example">
+                            <code>
+                                &lt;ol&gt; <br>
+                                    &lt;li&gt;Monday&lt;/li&gt; <br>
+                                    &lt;li&gt;Tuesday&lt;/li&gt; <br>
+                                    &lt;li&gt;Wednesday&lt;/li&gt; <br>
+                                &lt;/ol&gt; <br>
+                                &lt;ul&gt; <br>
+                                    &lt;li&gt;France&lt;/li&gt; <br>
+                                    &lt;li&gt;Germany&lt;/li&gt; <br>
+                                    &lt;li&gt;Italy&lt;/li&gt; <br>
+                                &lt;/ul&gt; <br>
+                                &lt;dl&gt; <br>
+                                    &lt;dt&gt;Toyota&lt;/dt&gt; <br>
+                                    &lt;dd&gt;Japanese car brand&lt;/dd&gt; <br> 
+                                    &lt;dt&gt;Armani&lt;/dt&gt; <br>
+                                    &lt;dd&gt;Italian fashion brand&lt;/dd&gt; <br>
+                                &lt;/dl&gt; <br>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="forms">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Forms<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;form&gt;...&lt;/form&gt;&nbsp;
+                        </code> <br>
+
+                        The parent tag for an HTML form. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;action="url"&nbsp;
+                        </code> <br>
+
+                        The URL listed here is where the form data will be submitted once user fills it. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;method=""&nbsp;
+                        </code> <br>
+
+                        It specifies which HTTP method (POST or GET) would be used to submit the form. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;enctype=""&nbsp;
+                        </code> <br>
+
+                        Only for POST method, this dictates the data encoding scheme to be used when form
+                        is submitted. <br> <br>
+
+
+                        <code class="syntax">
+                            &nbsp;autocomplete&nbsp;
+                        </code> <br>
+
+                        Determines if the form has auto-complete enabled. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;novalidate&nbsp;
+                        </code> <br>
+
+                        Determines whether the form should be validated before submission. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;accept-charsets&nbsp;
+                        </code> <br>
+
+                        Determines character encodings when form is submitted. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;target&nbsp;
+                        </code> <br>
+
+                        After submission, the form response is displayed wherever this refers to, usually has the following values: _blank, _self, _parent, _top <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;fieldset&gt;...&lt;/fieldset&gt;&nbsp;
+                        </code> <br>
+
+                        Identifies the group of all fields on the form. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;label&gt;...&lt;/label&gt;&nbsp;
+                        </code> <br>
+
+                        This is used to label a field in the form. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;legend&gt;...&lt;/legend&gt;&nbsp;
+                        </code> <br>
+
+                        This operates as a caption for the &lt;fieldset&gt; element. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;input/&gt;&nbsp;
+                        </code> <br>
+
+                        This tag is used to take input from the user.
+                        Input type is determined by a number of attributes. 
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="input-type-attribute">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Input Type Attributes<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;type=""&nbsp;
+                        </code> <br>
+
+                        Determines which type of input (text, dates, password) is requested from the user.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;name=""&nbsp;
+                        </code> <br>
+
+                        Specifies the name of the input field.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;value=""&nbsp;
+                        </code> <br>
+
+                        Specifies the value contained currently in the input field.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;size=""&nbsp;
+                        </code> <br>
+
+                        Determines the input element width (number of characters).<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;required&nbsp;
+                        </code> <br>
+
+                        Makes an input field compulsory to be filled by
+                        the user. The form cannot be submitted if a required field is left empty.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;width=""&nbsp;
+                        </code> <br>
+
+                        Determines the width of the input element, in pixel values.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;height=""&nbsp;
+                        </code> <br>
+
+                        Determines the height of the input element, in pixel values.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;placeholder=""&nbsp;
+                        </code> <br>
+
+                        Can be used to give hints to the user about the nature of the requested data.<br> <br>
+                        
+                        <code class="syntax">
+                            &nbsp;pattern=""&nbsp;
+                        </code> <br>
+
+                        Specifies a regular expression, which can be used to look for patterns in the user’s text.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;min=""&nbsp;
+                        </code> <br>
+
+                        The minimum value allowed for an &lt;input&gt; element.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;max=""&nbsp;
+                        </code> <br>
+
+                        The maximum value allowed for an &lt;input&gt; element.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;autofocus&nbsp;
+                        </code> <br>
+
+                        Forces focus on the input element when webpage loads completely.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;disabled&nbsp;
+                        </code> <br>
+
+                        Forces focus on the input element when webpage loads completely.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;textarea&gt;...&lt;/textarea&gt;&nbsp;
+                        </code> <br>
+
+                        For longer strings of input. Can be used to get multi-sentence text from the user.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;select&gt;...&lt;/select&gt;&nbsp;
+                        </code> <br>
+
+                        This tag specifies a list of options which the user can choose from.
+                        
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="select-attribute">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Select Attributes<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;name=""&nbsp;
+                        </code> <br>
+
+                        The name of a particular list of options.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;size=""&nbsp;
+                        </code> <br>
+
+                        Total number of options given to the user.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;multiple&nbsp;
+                        </code> <br>
+
+                        States whether the user can choose multiple options from the list.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;required&nbsp;
+                        </code> <br>
+
+                        Specifies whether choosing an option/s is necessary for form submission.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;autofocus&nbsp;
+                        </code> <br>
+
+                        Specifies that a drop-down list automatically comes into focus after a page loads.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;option&gt;...&lt;/option&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for listing individual items in the list of options.
+                        
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="option-attribute">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Option Attributes<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;value=""&nbsp;
+                        </code> <br>
+
+                        The text visible to the user for any given option.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;selected&nbsp;
+                        </code> <br>
+
+                        Determines which option is selected by default when the form loads. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;button&gt;...&lt;/button&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for creating a button for form submission.
+                        <br> <br>
+
+                        <h2>Example:</h2> <br>
+
+                        <div class="example">
+                            <code>
+                                &lt;form action="form_submit.php" method="post"&gt; <br> &lt;fieldset&gt; <br>
+                                    &lt;legend&gt;Bio:&lt;/legend&gt; <br>
+                                    First name:&lt;br&gt; <br>
+                                    &lt;input type="text" name="first-name" <br> value="John" placeholder="Please <br> enter your first name here"&gt;&lt;br&gt; <br>
+                                    Last name:&lt;br&gt; <br>
+                                    &lt;input type="text" name="last-name" <br> value="Doe" placeholder="Please <br> enter your last name here"&gt;&lt;br&gt;&lt;br&gt; <br> Favorite sport:&lt;br&gt; <br>
+                                    &lt;select&gt; <br>
+                                    &lt;option value="soccer"&gt;Soccer <br> &lt;/option&gt; <br>
+                                    &lt;option value="tennis"&gt;Tennis <br> &lt;/option&gt; <br>
+                                    &lt;option value="golf"&gt;Golf <br>
+                                    &lt;/option&gt; <br> &lt;/select&gt; <br>
+                                    &lt;textarea name="description"&gt; <br> &lt;/textarea&gt; <br>
+                                    &lt;input type="submit" value="Submit"&gt; <br>
+                                    &lt;/fieldset&gt; <br> &lt;/form&gt;
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="tables">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Tables<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;table&gt;...&lt;/table&gt;&nbsp;
+                        </code> <br>
+
+                        Marks a table in a webpage. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;caption&gt;...&lt;/caption&gt;&nbsp;
+                        </code> <br>
+
+                        Description of the table is placed inside this tag. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;thead&gt;...&lt;/thead&gt;&nbsp;
+                        </code> <br>
+
+                        Specifies information pertaining to specific columns of the table. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;tfoot&gt;...&lt;/tfoot&gt;&nbsp;
+                        </code> <br>
+
+                        Determines the footer of the table. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;tr&gt;...&lt;/tr&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes a single row in a table. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;th&gt;...&lt;/th&gt;&nbsp;
+                        </code> <br>
+
+                        The value of a heading of a table’s column.
+                         <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;td&gt;...&lt;/td&gt;&nbsp;
+                        </code> <br>
+
+                        A single cell of a table. Contains the actual value/data.
+                         <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;colgroup&gt;...&lt;/colgroup&gt;&nbsp;
+                        </code> <br>
+
+                        Used for grouping columns together.
+                         <br> <br>
+
+                         <code class="syntax">
+                            &nbsp;&lt;col&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes a column inside a table.
+                         <br> <br>
+
+                        <h2>Example:</h2> <br>
+
+                        <div class="example">
+                            <code>
+                                &lt;table&gt; <br>
+                                &lt;colgroup&gt; <br>
+                                    &lt;col span="2"&gt; <br>
+                                    &lt;col&gt; <br>
+                                &lt;/colgroup&gt; <br>
+                                    &lt;tr&gt; <br>
+                                    &lt;th&gt;Name&lt;/th&gt; <br>
+                                    &lt;th&gt;Major&lt;/th&gt; <br>
+                                    &lt;th&gt;GPA&lt;/th&gt; <br>
+                                    &lt;/tr&gt; <br>
+                                    &lt;tr&gt; <br>
+                                    &lt;td&gt;Bob&lt;/td&gt; <br>
+                                    &lt;td&gt;Law&lt;/td&gt; <br>
+                                    &lt;td&gt;3.55&lt;/td&gt; <br>
+                                    &lt;/tr&gt; <br>
+                                    &lt;tr&gt; <br>
+                                    &lt;td&gt;Alice&lt;/td&gt; <br>
+                                    &lt;td&gt;Medicine&lt;/td&gt; <br>
+                                    &lt;td&gt;3.61&lt;/td&gt; <br>
+                                    &lt;/tr&gt; <br>
+                                &lt;/table&gt; <br>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="objects-iframes">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Objects and iFrames<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;object&gt;...&lt;/object&gt;&nbsp;
+                        </code> <br>
+
+                        This tag is used to embed additional multimedia into a webpage. Can be audio, video, document (pdf) etc. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;height=""&nbsp;
+                        </code> <br>
+
+                        Determines object height in pixel values. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;width=""&nbsp;
+                        </code> <br>
+
+                        Determines object height in pixel values. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;type=""&nbsp;
+                        </code> <br>
+
+                        The type/format of the object’s contents. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;tr&gt;...&lt;/tr&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes a single row in a table. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;iframe&gt;...&lt;/iframe&gt;&nbsp;
+                        </code> <br>
+
+                        An inline block of content, this is used as a container for multimedia in a flexible manner. It floats inside
+                        a webpage, meaning it is placed relative to other webpage items.
+                         
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="iframe-attributes">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>iFrame Attributes<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;name=""&nbsp;
+                        </code> <br>
+
+                        The name of the iFrame. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;src=""&nbsp;
+                        </code> <br>
+
+                        The source URL/path of the multimedia object to be held inside the iFrame. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;srcdoc=""&nbsp;
+                        </code> <br>
+
+                        Any HTML content to be displayed inside the iFrame. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;height=""&nbsp;
+                        </code> <br>
+
+                        Determines the height of the iFrame. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;width=""&nbsp;
+                        </code> <br>
+
+                        Determines the width of the iFrame. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;param/&gt;&nbsp;
+                        </code> <br>
+
+                        For iFrame customization. This includes additional parameters to go along with the content.
+                         <br> <br>
+
+                         <code class="syntax">
+                            &nbsp;&lt;embed&gt;...&lt;/embed&gt;&nbsp;
+                        </code> <br>
+
+                        This is used to embed external objects, like plugins (e.g. a flash video).
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="embed-attributes">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Embed Attributes<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                          <br>
+
+                        <code class="syntax">
+                            &nbsp;height=""&nbsp;
+                        </code> <br>
+
+                        Determines the height of the embedded item. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;width=""&nbsp;
+                        </code> <br>
+
+                        Determines the width of the embedded item. <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;type=""&nbsp;
+                        </code> <br>
+
+                        The type or format of the embedded content.
+                         <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;src=""&nbsp;
+                        </code> <br>
+
+                        The URL/path of the embedded item. <br> <br>
+
+                        <h2>Example:</h2> <br>
+
+                        <div class="example">
+                            <code>
+                                &lt;object width="1000" height="1000"&gt;&lt;/object&gt; &lt;iframe  <br> src="some_other_webpage.html" width="500" height="500"&gt;&lt;/iframe&gt; <br>
+                                &lt;embed src="some_video.swf" width="500" height=“500"&gt;&lt;/embed&gt; 
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <section id="html-new-tags">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>HTML5 New Tags<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <code class="syntax">
+                            &nbsp;&lt;header&gt;...&lt;/header&gt;&nbsp;
+                        </code> <br>
+
+                        Specifies the webpage header. Could also be used for objects inside the webpage.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;footer&gt;...&lt;/footer&gt;&nbsp;
+                        </code> <br>
+
+                        Specifies the webpage footer. Could also be used for objects inside the webpage.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;main&gt;...&lt;/main&gt;&nbsp;
+                        </code> <br>
+
+                        Marks the main content of the webpage.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;article&gt;...&lt;/article&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes an article.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;aside&gt;...&lt;/aside&gt;&nbsp;
+                        </code> <br>
+
+                        Denotes content displayed in a sidebar of the webpage.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;section&gt;...&lt;/section&gt;&nbsp;
+                        </code> <br>
+
+                        Specifies a particular section in the webpage.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;details&gt;...&lt;/details&gt;&nbsp;
+                        </code> <br>
+
+                        Used for additional information. User has the option to view or hide this.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;summary&gt;...&lt;/summary&gt;&nbsp;
+                        </code> <br>
+
+                        Used as a heading for the above tag. Is always visible to the user.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;dialog&gt;...&lt;/dialog&gt;&nbsp;
+                        </code> <br>
+
+                        Used to create a dialog box.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;figure&gt;...&lt;/figure&gt;&nbsp;
+                        </code> <br>
+
+                        A tag reserved for figures (diagrams, charts) in HTML5.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;figcaption&gt;...&lt;/figcaption&gt;&nbsp;
+                        </code> <br>
+
+                        A description of the figure is placed inside these.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;mark&gt;...&lt;/mark&gt;&nbsp;
+                        </code> <br>
+
+                        Used to highlight a particular portion of the text.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;nav&gt;...&lt;/nav&gt;&nbsp;
+                        </code> <br>
+
+                        Navigation links for the user in a webpage.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;menuitem&gt;...&lt;/menuitem&gt;&nbsp;
+                        </code> <br>
+
+                        A particular item from a list or a menu.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;meter&gt;...&lt;/meter&gt;&nbsp;
+                        </code> <br>
+
+                        Measures data within a given range.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;progress&gt;...&lt;/progress&gt;&nbsp;
+                        </code> <br>
+
+                        Typically used as a progress bar, this is used to track progress.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;rp&gt;...&lt;/rp&gt;&nbsp;
+                        </code> <br>
+
+                        This tag is meant for showing text for browsers without ruby annotation support.<br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;rt&gt;...&lt;/rt&gt;&nbsp;
+                        </code> <br>
+
+                        Displays East Asian typography character details.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;ruby&gt;...&lt;/ruby&gt;&nbsp;
+                        </code> <br>
+
+                        Describes a Ruby annotation for East Asian typography
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;time&gt;...&lt;/time&gt;&nbsp;
+                        </code> <br>
+
+                        Tag for formatting date and time.
+                        <br> <br>
+
+                        <code class="syntax">
+                            &nbsp;&lt;wbr&gt;&nbsp;
+                        </code> <br>
+
+                        A line-break within the content.
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+        </main>
+</body>
+</html>

@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wdc_css_style.css">
+    <title>Liquified Documentation</title>
+</head>
+<body>
+        <div class="side-bar">
+            <h1>LWD Documentation</h1>
+
+            <h2>CSS</h2>
+
+            <h3><a href="#background">Background</a></h3>
+            <h3><a href="#border">Border</a></h3>
+            <h3><a href="#table">Table</a></h3>
+            <h3><a href="#box-model">Box Model</a></h3>
+            <h3><a href="#transitions">Transitions</a></h3>
+            <h3><a href="#color">Color</a></h3>
+            <h3><a href="#font">Font</a></h3>
+            <h3><a href="#animations">Animations</a></h3>
+            <h3><a href="#column">Column</a></h3>
+            <h3><a href="#text">Text</a></h3>
+            <h3><a href="#speech">Speech</a></h3>
+            <h3><a href="#template-layout">Template Layout</a></h3>
+            <h3><a href="#transform">3D/2D Transform</a></h3>
+            <h3><a href="#grid-positioning">Grid Positioning</a></h3>
+            <h3><a href="#hyperlink">Hyperlink</a></h3>
+            <h3><a href="#pseudo-class">Pseudo Class</a></h3>
+            <h3><a href="#pseudo-element">Pseudo Element</a></h3>
+        </div>  
+
+        <main>
+            <section id="background">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Background<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                background: background-image        
+                                        
+        <pre>
+            background-position
+            background-size
+            background-repeat
+            background-attachment
+            background-origin
+            background-clip
+            background-color
+        </pre> 
+                                       
+                            </code>
+
+                            <br>
+
+                            <code>
+                                background-attachment: scroll | fixed
+                            </code>
+
+                            <br> <br>
+
+                            <code>
+                                background-break: bounding-box | each-box | continuous
+                            </code>
+
+                            <br> <br>
+
+                            <code>
+                                background-clip: length
+                                <pre>    
+                 %
+                 border-box | padding-box |
+                 content-box | no-clip
+                                </pre>              
+                            </code>
+
+                            <code>
+                                background-color: color 
+              <pre>
+                  transparent
+              </pre>
+                            </code>
+
+                            <code>
+                                background-image: url 
+              <pre>
+                  none
+              </pre>
+                            </code>
+
+                            <code>
+                                background-origin: border-box | padding-box |
+               <pre>
+                   content-box
+               </pre>
+                            </code>
+
+                            <code>
+                                background-position: top left | top center | top
+                 <pre>
+                     right | center left | center
+                     center | center right |
+                     bottom left | bottom center
+                     | bottom right
+                     x-% y-%
+                     x-pos y-pos
+                 </pre>
+                            </code>
+
+                            <code>
+                                background-repeat: repeat | repeat-x | repeaty
+              <pre>
+                  | no-repeat
+              </pre>
+                            </code>
+
+                            <code>
+                                background-size: length
+             <pre>
+                 %
+                 auto | cover | contain
+             </pre>
+                            </code> 
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <br>
+
+            <section id="border">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Border<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                border: border-width
+    <pre>
+        border-style
+        border-color
+    </pre>
+                            </code>
+
+                            <code>
+                                border-break: border-width
+          <pre>
+              border-style
+              color
+              close
+          </pre>
+                            </code>
+
+                            <code>
+                                border-bottom: border-bottom-width
+           <pre>
+               border-style
+               border-color
+           </pre>
+                            </code>
+
+                            <code>
+                                border-bottom-color: border-color
+                            </code> <br> <br>
+
+                            <code>
+                                border-bottom-style: border-style
+                            </code> <br> <br>
+
+                            <code>
+                                border-bottom-width: thin | medium | thick
+                 <pre>
+                     length
+                 </pre>
+                            </code>
+
+                            <code>
+                                border-collapse: collapse | separate
+                            </code> <br> <br>
+
+                            <code>
+                                border-color: color
+                            </code> <br> <br>
+
+                            <code>
+                                border-image: image
+          <pre>
+              [ number / %
+              border-width
+              stretch | repeat | round ]
+              none
+          </pre>
+                            </code>
+
+                            <code>
+                                border-left: border-left-width
+         <pre>
+             border-style
+             border-color
+         </pre>
+                            </code>
+
+                            <code>
+                                border-left-color: border-color
+                            </code> <br> <br>
+
+                            <code>
+                                border-left-style: border-style
+                            </code> <br> <br>
+
+                            <code>
+                                border-left-width: thin | medium | thick
+               <pre>
+                   length
+               </pre>
+                            </code>
+
+                            <code>
+                                border-right: border-right-width
+          <pre>
+              border-style
+              border-color
+          </pre>
+                            </code>
+
+                            <code>
+                                border-right-color: border-color
+                            </code> <br> <br>
+
+                            <code>
+                                border-right-style: border-style
+                            </code> <br> <br>
+
+                            <code>
+                                border-right-width: thin | medium | thick
+                <pre>
+                    length
+                </pre>
+                            </code>
+
+                            <code>
+                                border-top: border-top-width
+        <pre>
+            border-style
+            border-color
+        </pre>
+                            </code>
+
+                            <code>
+                                border-top-color: border-color
+                            </code> <br> <br>
+
+                            <code>
+                                border-top-style: border-style
+                            </code> <br> <br>
+                            
+                            <code>
+                                border-top-width: thin | medium | thick
+              <pre>
+                  length
+              </pre>
+                            </code>
+
+                            <code>
+                                
+<pre>
+border-width: thin | medium | thick
+              length
+</pre>
+                            </code> <br>
+
+                            <code>
+<pre>
+border-radius: border-top-right-radius
+               border-bottom-right-radius
+               border-bottom-left-radius
+               border-top-left-radius
+</pre>
+                            </code> <br>
+
+                            <code>
+<pre>
+border-top-right-radius: length
+</pre>                                    
+                            </code> <br>
+
+                            <code>
+                                border-bottom-right-radius: length
+                            </code> <br> <br>
+
+                            <code>
+                                border-bottom-left-radius: length
+                            </code> <br> <br>
+
+                            <code>
+                                border-top-left-radius: length
+                            </code> <br> <br>
+
+                            <code>
+                                box-shadow: inset || [ length, length,
+        <pre>
+            length, length || &lt;color&gt; ]
+            none
+        </pre>
+                            </code>
+
+                            <code>
+                                border-style: none | hidden | dotted |
+          <pre>
+              dashed | solid | double |
+              groove | ridge | inset |
+              outset
+          </pre>
+                            </code>
+                        </div>
+                        
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+
+            <br>
+
+            <section id="table">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Table<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                border-collapse: collapse | separate
+                            </code> <br> <br>
+
+                            <code>
+                                border-spacing: length length
+                            </code> <br> <br>
+
+                            <code>
+                                caption-side: top | bottom | left | right
+                            </code> <br> <br>
+
+                            <code>
+                                empty-cells: show | hide
+                            </code> <br> <br>
+
+                            <code>
+                                table-layout: table-layout auto | fixed
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr> 
+            <br>
+
+            <section id="box-model">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Box Model<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                clear: left | right | both | none
+                            </code> <br> <br>
+
+                            <code>
+                                display: none | inline | block | inlineblock
+     <pre>
+         | list-item | run-in |
+         compact | table | inlinetable
+         | table-row-group |
+         table-header-group | tablefooter-
+         group | table-row |
+         table-column-group | tablecolumn
+         | table-cell | tablecaption
+         | ruby | ruby-base |
+         ruby-text | ruby-base-group
+         | ruby-text-group
+     </pre>
+                            </code>
+
+                            <code>
+                                float: left | right | none
+                            </code> <br> <br>
+
+                            <code>
+                                height: auto
+    <pre>
+        length
+        %
+    </pre>
+                            </code>
+
+                            <code>
+                                max-height: none
+        <pre>
+            length
+            %
+        </pre>
+                            </code>
+
+                            <code>
+                                max-width: none
+       <pre>
+           length
+           %
+       </pre>
+                            </code>
+
+                            <code>
+                                min-height: none | inherit
+        <pre>
+            length
+            %
+        </pre>
+                            </code>
+
+                            <code>
+                                min-width: none | inherit
+       <pre>
+           length
+           %
+       </pre>
+                            </code>
+
+                            <code>
+                                width: auto
+   <pre>
+       length
+       %
+   </pre>
+                            </code>
+
+                            <code>
+                                margin: margin margin-top
+    <pre>
+        margin-right
+        margin-bottom
+        margin-left
+    </pre>
+                            </code>
+
+                            <code>
+                                margin-bottom: auto
+           <pre>
+               length
+               %
+           </pre>
+                            </code>
+
+                            <code>
+                                margin-left: auto
+         <pre>
+             length
+             %
+         </pre>
+                            </code>
+
+                            <code>
+                                margin-right: auto
+          <pre>
+              length
+              %
+          </pre>
+                            </code>
+
+                            <code>
+                                margin-top: auto
+        <pre>
+            length
+            %
+        </pre>
+                            </code>
+
+                            <code>
+                                padding: padding-top
+     <pre>
+         padding-right
+         padding-bottom
+         padding-left
+     </pre>
+                            </code>
+
+                            <code>
+                                padding-bottom: length
+            <pre>
+                %
+            </pre>
+                            </code>
+
+                            <code>
+                                padding-left: length
+          <pre>
+              %
+          </pre>
+                            </code>
+
+                            <code>
+                                padding-right: length
+           <pre>
+               %
+           </pre>
+                            </code>
+
+                            <code>
+                                padding-top: length
+         <pre>
+             %
+         </pre>
+                            </code>
+
+                            <code>
+                                marquee-direction: forward | reverse
+                            </code> <br> <br>
+
+                            <code>
+                                marquee-loop: infinite
+          <pre>
+              number
+          </pre>
+                            </code>
+
+                            <code>
+                                marquee-play-count: infinite
+                <pre>
+                    integer
+                </pre>
+                            </code>
+
+                            <code>
+                                marquee-speed: slow | normal | fast
+                            </code> <br> <br>
+
+                            <code>
+                                marquee-style: scroll | slide | alternate
+                            </code> <br> <br>
+
+                            <code>
+                                overflow: visible | hidden | scroll |
+              <pre>
+                  auto | no-display | nocontent
+                  overflow-x
+                  overflow-y
+              </pre>
+                            </code>
+
+                            <code>
+                                overflow-x: visible | hidden | scroll |
+                <pre>
+                    auto | no-display | nocontent
+                </pre>
+                            </code>
+
+                            <code>
+                                overflow-y: visible | hidden | scroll |
+                <pre>
+                    auto | no-display | nocontent
+                </pre>
+                            </code>
+
+                            <code>
+                                rotation: angle
+                            </code> <br> <br>
+
+                            <code>
+                                rotation-point: position (paired value offset)
+                            </code> <br> <br>
+
+                            <code>
+                                visibility: visibility visible | hidden |
+        <pre>
+            collapse
+        </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="transitions">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Transitions<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                transition: transition-property
+        <pre>
+            transition-duration
+            transition-timing-function
+            transition-delay
+        </pre>
+                            </code>
+
+                            <code>
+                                transition-delay: time
+                            </code> <br> <br>
+
+                            <code>
+                                transition-duration: time
+                            </code> <br> <br>
+
+                            <code>
+                                transition-property: none | all
+                            </code> <br> <br>
+
+                            <code>
+                                transition-timing-function: ease | linear | ease-in |
+                        <pre>
+                            ease-out | ease-in-out |
+                            cubic-Bezier (number,
+                            number, number, number)
+                        </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="color">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Color<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                color: inherit
+   <pre>
+       color
+   </pre>
+                            </code>
+
+                            <code>
+                                opacity: inherit
+     <pre>
+         number
+     </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="font">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Font<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                font: font-style
+  <pre>
+      font-variant
+      font-weight 
+      font-size/line-height 
+      font-family
+      caption | icon | menu | 
+      message-box | smallcaption 
+      | status-bar
+  </pre>
+                            </code>
+
+                            <code>
+                                font-family: family-name
+         <pre>
+             generic-family
+             inherit
+         </pre>
+                            </code>
+
+                            <code>
+                                font-size: xx-small | x-small | small |
+       <pre>
+           medium | large | x-large |
+           xx-large | smaller | larger |
+           inherit
+           length
+           %
+       </pre>
+                            </code>
+
+                            <code>
+                                font-size-adjust: none| inherit
+                                <pre>
+                                    number
+                                </pre>
+                            </code>
+
+                            <code>
+                                font-stretch: normal | wider | narrower |
+          <pre>
+              ultra-condensed | extracondensed
+              | condensed | semi-condensed
+              | semiexpanded | expanded |
+              extra-expanded | ultraexpanded
+              | inherit
+          </pre>
+                            </code>
+
+                            <code>
+                                font-style: normal | italic | oblique |
+        <pre>
+            inherit
+        </pre>
+                            </code>
+
+                            <code>
+                                font-variant: normal | small-caps | inherit
+                            </code> <br> <br>
+
+                            <code>
+                                font-weight: normal | bold | bolder |
+         <pre>
+             lighter | 100 | 200 | 300 |
+             400 | 500 | 600 | 700 | 800
+             | 900 | inherit
+         </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="animations">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Animations<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                animation: animation-name
+       <pre>
+           animation-duration
+           animation-timing-function
+           animation-delay
+           animation-iteration-count
+           animation-direction
+       </pre>
+                            </code>
+
+                            <code>
+                                animation-delay: time
+                            </code> <br> <br>
+
+                            <code>
+                                animation-direction: normal | alternate
+                            </code> <br> <br>
+
+                            <code>
+                                animation-duration: time
+                            </code> <br> <br>
+
+                            <code>
+                                animation-iteration-count: inherit
+                       <pre>
+                           number
+                       </pre>
+                            </code>
+
+                            <code>
+                                animation-name: none | IDENT
+                            </code> <br> <br>
+
+                            <code>
+                                animation-play-state: running | paused
+                            </code> <br> <br>
+
+                            <code>
+                                animation-timing-function: ease | linear | ease-in |
+                       <pre>
+                           ease-out | ease-in-out |
+                           cubic-Bezier (number,
+                           number, number, number)
+                       </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="column">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Column<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                column-count: auto
+          <pre>
+              number
+          </pre>
+                            </code>
+
+                            <code>
+                                column-fill: auto | balance
+                            </code> <br> <br>
+
+                            <code>
+                                column-gap: normal
+        <pre>
+            length
+        </pre>
+                            </code>
+
+                            <code>
+                                column-rule: column-rule-width
+         <pre>
+             column-rule-style
+             column-rule-color
+         </pre>
+                            </code>
+
+                            <code>
+                                column-rule-color: color
+                            </code> <br> <br>
+
+                            <code>
+                                column-rule-style: border-style
+                            </code> <br> <br>
+
+                            <code>
+                                column-rule-width: thin | medium | thick
+               <pre>
+                   length
+               </pre>
+                            </code>
+
+                            <code>
+                                columns: column-width
+     <pre>
+         column-count
+     </pre>
+                            </code>
+
+                            <code>
+                                column-span: 1 | all
+                            </code> <br> <br>
+
+                            <code>
+                                column-width: auto
+          <pre>
+              length
+          </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="text">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Text<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                direction: ltr | rtl | inherit
+                            </code> <br> <br>
+
+                            <code>
+                                hanging-punctuation: none | [ start | end | endedge ]
+                            </code> <br> <br>
+
+                            <code>
+                                letter-spacing: normal
+            <pre>
+                length
+                %
+            </pre>
+                            </code>
+
+                            <code>
+                                punctuation-trim: none | [start | end | adjacent]
+                            </code> <br> <br>
+
+                            <code>
+                                text-align: start | end | left | right |
+              <pre>
+                  center | justify
+              </pre>
+                            </code>
+
+                            <code>
+                                text-align-last: start | end | left | right |
+             <pre>
+                 center | justify
+             </pre>
+                            </code>
+
+                            <code>
+                                text-decoration: none | underline | overline |
+             <pre>
+                 line-through | blink
+             </pre>
+                            </code>
+
+                            <code>
+                                text-emphasis: none | [ [ accent | dot | circle
+           <pre>
+               | disc] [ before | after ]? ]
+           </pre>
+                            </code>
+
+                            <code>
+                                text-indent: length
+         <pre>
+             %
+         </pre>
+                            </code>
+
+                            <code>
+                                text-justify: auto | inter-word | interideograph
+          <pre>
+              | inter-cluster | distribute |
+              kashida | tibetan
+          </pre>
+                            </code>
+
+                            <code>
+                                text-outline: none
+          <pre>
+              color
+              length
+          </pre>
+                            </code>
+
+                            <code>
+                                text-shadow: none
+         <pre>
+             color
+             length
+         </pre>
+                            </code>
+
+                            <code>
+                                text-transform: none | capitalize | uppercase
+            <pre>
+                | lowercase
+            </pre>
+                            </code>
+
+                            <code>
+                                text-wrap: normal | unrestricted | none
+       <pre>
+           | suppress
+       </pre>
+                            </code>
+
+                            <code>
+                                unicode-bidi: normal | embed | bidioverride
+                            </code> <br> <br>
+
+                            <code>
+                                white-space: normal | pre | nowrap | prewrap
+         <pre>
+             | pre-line
+         </pre>
+                            </code>
+
+                            <code>
+                                white-space-collapse: preserve | collapse | preserve-
+                  <pre>
+                      breaks | discard
+                  </pre>
+                            </code>
+
+                            <code>
+                                word-break: normal | keep-all | loose |
+        <pre>
+            break-strict | break-all
+        </pre>
+                            </code>
+
+                            <code>
+                                word-spacing: normal
+          <pre>
+              length 
+              %
+          </pre>
+                            </code>
+
+                            <code>
+                                word-wrap: normal | break-word
+                            </code> <br> <br>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="speech">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Speech<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                cue: cue-before
+ <pre>
+     cue-after
+ </pre>
+                            </code>
+
+                            <code>
+                                cue-before: uri [ silent | x-soft | soft |
+        <pre>
+            medium | loud | x-loud] |
+        </pre>
+                            </code>
+
+                            <code>
+                                cue-after: uri [ silent | x-soft | soft |
+       <pre>
+           medium | loud | x-loud] |
+           none | inherit ]
+           number
+           %
+       </pre>
+                            </code>
+
+                            <code>
+                                mark: mark-before
+  <pre>
+      mark-after
+  </pre>
+                            </code>
+
+                            <code>
+                                mark-before: string
+                            </code> <br> <br>
+
+                            <code>
+                                mark-after: string
+                            </code> <br> <br>
+
+                            <code>
+                                pause: pause-before
+   <pre>
+       pause-after
+   </pre>
+                            </code>
+
+                            <code>
+                                pause-before: none | x-weak | weak |
+          <pre>
+              medium | strong | x-strong
+              | inherit
+              time
+          </pre>
+                            </code>
+
+                            <code>
+                                pause-after: none | x-weak | weak |
+         <pre>
+             medium | strong | x-strong
+             | inherit
+             time
+         </pre>
+                            </code>
+
+                            <code>
+                                phonemes string: string
+                            </code> <br> <br>
+
+                            <code>
+                                rest: rest-before
+  <pre>
+      rest-after
+  </pre>
+                            </code>
+
+                            <code>
+                                rest-before: none | x-weak | weak |
+         <pre>
+             medium | strong | x-strong
+             | inherit
+             time
+         </pre>
+                            </code>
+
+                            <code>
+                                rest-after: none | x-weak | weak |
+        <pre>
+            medium | strong | x-strong
+            | inherit
+            time
+        </pre>
+                            </code>
+
+                            <code>
+                                speak: none | normal | spell-out |
+   <pre>
+       digits | literal-punctuation |
+       no-punctuation | inherit
+   </pre>
+                            </code>
+
+                            <code>
+                                voice-balance: left | center | right | leftwards
+           <pre>
+               | rightwards | inherit
+               number
+           </pre>
+                            </code>
+
+        <code>
+            voice-duration: time
+        </code> <br> <br>
+
+        <code>
+            voice-family: voice-family
+          <pre>
+              age, generic-voice, number> ]
+          </pre>
+        </code>
+
+        <code>
+            voice-rate: x-slow | slow | medium |
+        <pre>
+            fast | x-fast | inherit
+            %
+        </pre>
+        </code>
+
+        <code>
+            voice-pitch: x-low | low | medium | high
+         <pre>
+             | x-high | inherit
+             number
+             %
+         </pre>
+        </code>
+
+        <code>
+            voice-pitch-range: x-low | low | medium | high
+               <pre>
+                   | x-high | inherit
+                   number
+               </pre>
+        </code>
+
+        <code>
+            voice-stress: strong | moderate | none |
+          <pre>
+              reduced | inherit
+          </pre>
+        </code>
+
+        <code>
+            voice-volume: silent | x-soft | soft | medium
+          <pre>
+              | loud | x-loud | inherit
+              number
+              %
+          </pre>
+        </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="template-layout">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Template Layout<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                box-align: start | end | center | base
+                            </code> <br> <br>
+
+                            <code>
+                                box-direction: normal | reverse
+                            </code> <br> <br>
+
+                            <code>
+                                box-flex: number
+                            </code> <br> <br>
+
+                            <code>
+                                box-flex-group: integer
+                            </code> <br> <br>
+
+                            <code>
+                                box-lines: single | multiple
+                            </code> <br> <br>
+
+                            <code>
+                                box-orient: horizontal | vertical | inlineaxis
+        <pre>
+            | block-axis
+        </pre>
+                            </code>
+
+                            <code>
+                                box-pack: start | end | center | justify
+                            </code> <br> <br>
+
+                            <code>
+                                box-sizing: content-box | padding-box |
+        <pre>
+            border-box | margin-box
+        </pre>
+                            </code>
+
+                            <code>
+                                tab-side: top | bottom | left | right
+                            </code> <br> <br>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="transform">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>3D/2D Transform <span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                backface-visibility: visible | hidden
+                            </code> <br> <br>
+
+                            <code>
+                                perspective: none
+         <pre>
+             number
+         </pre>
+                            </code>
+
+                            <code>
+                                perspective-origin: [ [ [ percentage> | &lt;length&gt; |
+                <pre>
+                    left | center | right ] [ &lt;percentage&gt; | &lt;length&gt; | top
+                    | center | bottom ]? ] &lt;length&gt; ] | [ [ [ left | center | right ] ||
+                    [ top | center | bottom ] ] &lt;length&gt; ]
+                </pre>
+                            </code>
+
+                            <code>
+                                transform: none | matrix | matrix3d |
+       <pre>
+           translate3d | translateX | translateY | translateZ | scale | scale3d | scaleX | scaleY | scaleZ |
+           rotate | rotate3d | rotateX | rotateY | rotateZ | skewX | skewY | skew | perspective
+       </pre>
+                            </code>
+
+                            <code>
+                                transform-origin: [ [ [ &lt;percentage&gt; |
+              <pre>
+                  &lt;length&gt; | left | center | right ] [ &lt;percentage&gt; | &lt;length&gt; | top | center | bottom ]? ] &lt;length&gt; ] |
+                  [ [ [ left | center | right ] || [ top | center | bottom ] ] &lt;length&gt; ]
+              </pre>
+                            </code>
+
+                            <code>
+                                transform-style: flat | preserve-3d
+                            </code> <br> <br>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="grid-positioning">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Grid Positioning<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                grid-columns: none | inherit
+          <pre>
+              [ length percentage relative length ]
+          </pre>
+                            </code>
+
+                            <code>
+                                grid-rows: none | inherit
+       <pre>
+           [ length percentage relative length ]
+       </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="hyperlink">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Hyperlink<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                target: target-name
+    <pre>
+        target-new 
+        target-position
+    </pre>
+                            </code>
+
+                            <code>
+                                target-name: current | root | parent | new
+         <pre>
+             | modal
+             string
+         </pre>
+                            </code>
+
+                            <code>
+                                target-new: window | tab | none
+                            </code> <br> <br>
+
+                            <code>
+                                target-position: above | behind | front |
+             <pre>
+                 back
+             </pre>
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="pseudo-class">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Pseudo Class<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                :active an activated element
+                            </code> <br> <br>
+
+                            <code>
+                                :focus an element while the element has focus
+                            </code> <br> <br>
+
+                            <code>
+                                :visited a visited link
+                            </code> <br> <br>
+
+                            <code>
+                                :hover an element when you mouse over it
+                            </code> <br> <br>
+
+                            <code>
+                                :link an unvisited link
+                            </code> <br> <br>
+
+                            <code>
+                                :disabled an element while the element is disabled
+                            </code> <br> <br>
+
+                            <code>
+                                :enabled an element while the element is enabled
+                            </code> <br> <br>
+
+                            <code>
+                                :checked an element (form element control) that is checked
+                            </code> <br> <br>
+
+                            <code>
+                                :selection an element that is currently selected of highlighted by the user
+                            </code> <br> <br>
+
+                            <code>
+                                :lang Allows the author to specify
+                                a language to use in a specified element
+                            </code> <br> <br>
+
+                            <code>
+                                :nth-child(n) an element that is the n-th sibling
+                            </code> <br> <br>
+
+                            <code>
+                                :nth-last-child(n) an element that is the n-th sibling counting from the last sibling
+                            </code>
+
+                            <code>
+                                :first-child an element that is the first sibling
+                            </code> <br> <br>
+
+                            <code>
+                                :last-child an element that is the last sibling
+                            </code>
+
+                            <code>
+                                :only-child an element that is the only child
+                            </code>
+
+                            <code>
+                                :nth-of-type(n) an element that is the n-th sibling of its type.
+                            </code> <br> <br>
+
+                            <code>
+                                :nth-last-of-type(n) an element that is the n-th sibling of its type counting from the last sibling
+                            </code> <br> <br>
+
+                            <code>
+                                :last-of-type an element that is the first sibling of its type
+                            </code> <br> <br>
+
+                            <code>
+                                :first-of-type an element that is the last sibling of its type
+                            </code> <br> <br>
+
+                            <code>
+                                :only-of-type an element that is the only child of that type
+                            </code> <br> <br>
+
+                            <code>
+                                :empty an element that has no children
+                            </code> <br> <br>
+
+                            <code>
+                                :root root element within the document
+                            </code> <br> <br>
+
+                            <code>
+                                :not(x) an element not represented by the argument ‘x’
+                            </code> <br> <br>
+
+                            <code>
+                                :target a target element as specified by a target in a URI
+                            </code>
+                        </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="pseudo-element">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Pseudo Element<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                        <br>
+                        <div class="example">
+                            <code>
+                                ::first-letter Adds special style to the first letter of a text
+                            </code> <br> <br>
+
+                            <code>
+                                ::first-line Adds special style to the first line of a text
+                            </code> <br> <br>
+
+                            <code>
+                                ::before Inserts some content before an element
+                            </code> <br> <br>
+
+                            <code>
+                                ::after Inserts some content after an element
+                            </code> <br> <br>
+                        </div>
+                    </p>
+                </article>
+            </section>
+        </main>
+</body>
+</html>

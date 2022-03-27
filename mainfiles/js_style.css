@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar
+    {
+        display: none;
+    }
+
+:root
+{
+    --background: rgb(23, 23, 53);
+    --foreground: rgb(0, 255, 221);
+    --brackets: rgb(253, 74, 74);
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+hr
+{
+    margin: 30px 0 10px 0;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+p
+{
+    font-size: 15px;
+    word-wrap: break-word;
+}
+
+.side-bar
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    max-width: 350px;
+    height: 100vh;
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;;
+    border-right: grey 5px solid;
+}
+
+.side-bar h1
+{
+    text-align: center;
+    padding: 5px;
+    height: 80px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar h2
+{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--foreground);
+    color: var(--background);
+}
+
+.side-bar a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.side-bar h3
+{
+    display: flex;
+    height: 40px;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.side-bar h3 a
+{
+    width: 100%;
+}
+
+.side-bar h3 a:hover
+{
+    padding-left: 3px;
+    border-left: 3px solid var(--foreground);
+}
+
+main
+{
+    padding: 20px;
+    flex: 1;
+    margin-left: 300px;
+    background-color:white;
+    font-family: 'Rubik', sans-serif;
+}
+
+.red-brackets
+{
+    color: white;
+}
+
+#js-basics header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#js-basics header h1 , span
+{
+    font-size: 28px;
+}
+
+#conditional-statements header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#conditional-statements header h1 , span
+{
+    font-size: 28px;
+}
+#iterative-statements header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#iterative-statements header h1 , span
+{
+    font-size: 28px;
+}
+#strings header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#strings header h1 , span
+{
+    font-size: 28px;
+}
+#arrays header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#arrays header h1 , span
+{
+    font-size: 28px;
+}
+#number-methods header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#number-methods header h1 , span
+{
+    font-size: 28px;
+}
+#maths-methods header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#maths-methods header h1 , span
+{
+    font-size: 28px;
+}
+#dates header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#dates header h1 , span
+{
+    font-size: 28px;
+}
+#mouse-events header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#mouse-events header h1 , span
+{
+    font-size: 28px;
+}
+#keyboard-events header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#keyboard-events header h1 , span
+{
+    font-size: 28px;
+}
+#errors header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#errors header h1 , span
+{
+    font-size: 28px;
+}
+#window-methods header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#window-methods header h1 , span
+{
+    font-size: 28px;
+}
+#query-elements header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#query-elements header h1 , span
+{
+    font-size: 28px;
+}
+#creating-elements header:hover .red-brackets
+{
+    transition: 0.3s ease-in;
+    color: var(--brackets);
+}
+
+#creating-elements header h1 , span
+{
+    font-size: 28px;
+}
+.example
+{
+    padding: 2px;
+    width: 100%;
+    font-size: 15px;
+    background-color: var(--background);
+    color: var(--foreground);
+    border-radius: 5px;
+    border-left: 3px solid var(--foreground);
+}
+
+
+

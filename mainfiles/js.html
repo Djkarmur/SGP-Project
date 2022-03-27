@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js_style.css">
+    <title>Liquified Documentation</title>
+</head>
+<body>
+        <div class="side-bar">
+            <h1>LJS Documentation</h1>
+
+            <h2>JAVASCRIPT</h2>
+
+            <h3><a href="#js-basics">js Basics</a></h3>
+            <h3><a href="#conditional-statements">Conditional Statements</a></h3>
+            <h3><a href="#iterative-statements">Iterative Statements</a></h3>
+            <h3><a href="#strings">Strings</a></h3>
+            <h3><a href="#arrays">Arrays</a></h3>
+            <h3><a href="#number-methods">Number Methods</a></h3>
+            <h3><a href="#maths-methods">Maths Methods</a></h3>
+            <h3><a href="#dates">Dates</a></h3>
+            <h3><a href="#mouse-events">Mouse Events</a></h3>
+            <h3><a href="#keyboard-events">Keyboard Events</a></h3>
+            <h3><a href="#errors">Errors</a></h3>
+            <h3><a href="#window-methods">Window Methods</a></h3>
+            <h3><a href="#query-elements">Query/Get Elements</a></h3>
+            <h3><a href="#creating-elements">Creating Elements</a></h3>
+            
+            
+        </div>  
+
+        <main>
+            <section id="js-basics">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>JS Basics<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                 <h2>On Page Script</h2>
+                                 <br>
+<pre>
+&lt;script type="text/javascript"> //JS code goes here &lt;/script>
+
+</pre>
+<br>
+                       <h2>External JS File</h2>
+                       <br>
+<pre>
+&lt;script src="filename.js">&lt;/script>
+</pre>                       
+<br>
+                        <h2>Functions</h2>
+                        <br>
+<pre>
+function nameOfFunction () {
+// function body 
+}
+</pre>                      
+<br>
+                        <h2>DOM Element</h2>
+<br>
+<pre>
+ document.getElementById("elementID").innerHTML = "Hello World!";
+</pre>                      
+<br>
+                        <h2>Output</h2>
+<br>
+<pre>
+console.log(a);
+</pre>                      
+<br>
+                     
+                             </code>
+                         </div>
+                    </p>
+                </article>
+            </section>
+
+            <hr>
+            <br>
+
+            <section id="conditional-statements">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Conditional Statements<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                 <h2>If Statement</h2>
+                                 <br>
+<pre>
+if (condition) {
+// block of code to be executed if the condition is true
+}
+</pre>                 
+<br>                
+                           <h2>If-else Statement</h2>
+                           <br>
+<pre>
+if (condition) {
+// block of code to be executed if the condition is true
+} else {
+// block of code to be executed if the condition is false
+}
+</pre>                      
+<br>                        
+                           <h2>Else-if Statement</h2>
+                           <br>
+<pre>
+if (condition1) {
+ // block of code to be executed if condition1 is true
+ } else if (condition2) {
+ // block of code to be executed if the condition1 is false and condition2 is true
+ } else {
+ // block of code to be executed if the condition1 is false and condition2 is false
+ }
+</pre>                    
+<br>         
+                          <h2>Switch Statement</h2>
+                          <br>
+<pre>
+switch(expression) {
+case x:
+// code block
+break;
+case y:
+// code block
+break;
+default:
+// code block
+}
+</pre>                  
+ <br>        
+                         
+                             </code>
+                             
+                         </div>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <br>
+            <section id="iterative-statements">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Iterative Statements<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                            <code>
+                                <h2>For Loop</h2>
+                                <br>
+<pre>
+for (statement 1; statement 2; statement 3) {
+// code block to be executed
+}
+</pre>                                
+<br>
+                                <h2>While Loop</h2>
+<br>
+<pre>
+while (condition) {
+// code block to be executed
+}
+</pre>                                
+<br>
+                                <h2>Do While Loop</h2>
+<br>
+<pre>
+do {
+// run this code in block
+i++;
+} while (condition);
+</pre>                                
+<br>
+                                
+                            </code>
+                     
+                             
+                         </div>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <br>
+            <section id="strings">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Strings<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                <h2>charAt method</h2>
+                                <br>
+<pre>
+str.charAt(3)
+</pre>                      
+<br>                   
+                               <h2>concat method</h2>
+<br>
+<pre>
+str1.concat(str2)
+</pre>                      
+<br>                   
+                               <h2>index of method</h2>
+<br>
+<pre>
+str.indexOf('substr')
+</pre>                      
+<br>                   
+                                <h2>match method</h2>
+<br>
+<pre>
+str.match(/(chapter \d+(\.\d)*)/i;)
+</pre>                      
+<br>                   
+                                <h2>replace method</h2>
+<br>
+<pre>
+str1.replace(str2)
+</pre>                      
+<br>                   
+                                <h2>search method</h2>
+<br>
+<pre>
+str.search('term')
+</pre>                      
+<br>                   
+                                <h2>split method</h2>
+<br>
+<pre>
+str.split('\n')
+</pre>                      
+<br>                   
+                                <h2>substring method</h2>
+<br>
+<pre>
+str.substring(0,5)
+</pre>                      
+<br>                   
+ 
+                     
+                             </code>
+                            </div>
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+
+
+                             <section id="arrays">
+                                <header>
+                                    <h1><span class="red-brackets">&lt;</span>Arrays<span class="red-brackets">&gt;</span></h1>
+                                </header>
+                                <article>
+                                    <p>
+                                         <br> 
+                                         <div class="example">
+                                             <code>
+                                                <h2>variable</h2>
+                                                <br>
+<pre>
+var fruit = ["element1", "element2", "element3"];
+</pre>                      
+                <br>                   
+                                <h2>concat method</h2>
+                <br>
+<pre>
+concat()    
+</pre>                      
+                <br>                   
+                                <h2>indexOf method</h2>
+                <br>
+<pre>
+indexOf()
+      
+</pre>                      
+                <br>                   
+                                <h2>join method</h2>
+                <br>
+<pre>
+join() 
+</pre>                      
+                <br>     
+                                <h2>pop method</h2>
+                <br>
+<pre>
+pop()
+</pre>                      
+                <br>           
+                                <h2>reverse method</h2>
+                <br>
+<pre>
+reverse() 
+</pre>                      
+                <br>           
+                                <h2>sort method</h2>
+                <br>
+<pre>
+sort()
+</pre>                      
+                <br>           
+                                <h2>toString method</h2>
+                <br>
+<pre>
+toString()
+</pre>                      
+                <br>           
+                                <h2>valueOf method</h2>
+                <br>
+<pre>
+valueOf()
+</pre>                      
+                <br>                         
+                
+                     </code>                
+                         </div>
+                    </p>
+                </article>
+            </section>
+            <hr>
+            <br>
+            <section id="number-methods">
+                <header>
+                    <h1><span class="red-brackets">&lt;</span>Number Methods<span class="red-brackets">&gt;</span></h1>
+                </header>
+                <article>
+                    <p>
+                         <br> 
+                         <div class="example">
+                             <code>
+                                <h2>toExponential method</h2>
+                                <br>
+<pre>
+toExponential()
+</pre>                      
+<br>                   
+                               <h2>toPrecision method</h2>
+<br>
+<pre>
+toPrecision()
+</pre>                      
+<br>                   
+                               <h2>toString method</h2>
+<br>
+<pre>
+toString()
+</pre>                      
+<br>                   
+                               <h2>valueOf method</h2>
+<br>
+<pre>
+valueOf()
+</pre>                      
+<br>                   
+                          
+                             </code>
+                            </div>
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section id="maths-methods">
+                    <header>
+                        <h1><span class="red-brackets">&lt;</span>Maths Method<span class="red-brackets">&gt;</span></h1>
+                    </header>
+                    <article>
+                        <p>
+                             <br> 
+                             <div class="example">
+                                 <code>
+                                    <h2>ceil method</h2>
+                                    <br>
+<pre>
+ceil(x)    
+</pre>                      
+    <br>                   
+                                   <h2>exp method</h2>
+    <br>
+<pre>
+exp(x)
+</pre>                      
+    <br>                   
+                                   <h2>log method</h2>
+    <br>
+<pre>
+log(x)
+</pre>                      
+<br>                   
+                                   <h2>pow method</h2>
+<br>
+<pre>
+pow(x,y) 
+</pre>                      
+<br>                   
+                                   <h2>random method</h2>
+<br>
+<pre>
+random()
+</pre>                      
+<br>                   
+                         
+                                   <h2>sqrt method</h2>
+
+
+<br>
+<pre>
+sqrt(x)
+</pre>                      
+<br>                   
+                                 </code>
+                                </div>
+                            </p>
+                        </article>
+                    </section>
+                     <hr>
+                     <br>
+                     <section id="dates">
+                        <header>
+                            <h1><span class="red-brackets">&lt;</span>Dates<span class="red-brackets">&gt;</span></h1>
+                        </header>
+                        <article>
+                            <p>
+                                 <br> 
+                                 <div class="example">
+                                     <code>
+                                        <h2>Pulling Date from the Date object</h2>
+                                        <br>
+<pre>
+getDate()
+</pre>                      
+        <br>                   
+                                       <h2>Pulling Day from the Date object</h2>
+        <br>
+<pre>
+getDay()   
+</pre>                      
+        <br>                   
+                                       <h2>Pulling Hours from the Date object</h2>
+        <br>
+<pre>
+getHours() 
+</pre>                      
+    <br>                   
+                                       <h2>Pulling Minutes from the Date object</h2>
+    <br>
+<pre>
+getMinutes()  
+</pre>                      
+    <br>                   
+                                    <h2>Pulling Seconds from the Date object</h2>
+    <br>
+<pre>
+getSeconds()
+</pre>                      
+    <br>                   
+          
+                                    <h2>Pulling Time from the Date object</h2>
+    <br>
+<pre>
+getTime()
+</pre>                      
+    <br>                   
+                    
+                                     </code>
+                                    </div>
+                                </p>
+                            </article>
+                        </section>
+                        <hr>
+                        <br>
+                        <section id="mouse-events">
+                            <header>
+                                <h1><span class="red-brackets">&lt;</span>Mouse Events<span class="red-brackets">&gt;</span></h1>
+                            </header>
+                            <article>
+                                <p>
+                                     <br> 
+                                     <div class="example">
+                                         <code>
+                                            <h2>click</h2>
+                                            <br>
+<pre>
+element.addEventListener('click', ()=>{
+// Code to be executed when the event is fired
+}); 
+</pre>                      
+            <br>                   
+                                           <h2>oncontextmenu</h2>
+            <br>
+<pre>
+element.addEventListener('contextmenu', ()=>{
+// Code to be executed when the event is fired
+});   
+</pre>                      
+            <br>                   
+            <h2>dblclick</h2>
+            <br>
+<pre>
+element.addEventListener('dblclick', ()=>{
+// Code to be executed when the event is fired
+});   
+</pre>                      
+            <br>                   
+            <h2>mouseenter</h2>
+            <br>
+<pre>
+element.addEventListener('mouseenter', ()=>{
+// Code to be executed when the event is fired
+});  
+</pre>                      
+            <br>                   
+            <h2>mouseleave</h2>
+            <br>
+<pre>
+element.addEventListener('mouseleave', ()=>{
+// Code to be executed when the event is fired
+});   
+</pre>                      
+            <br>                   
+            <h2>mousemove</h2>
+            <br>
+<pre>
+element.addEventListener('mousemove', ()=>{
+// Code to be executed when the event is fired
+}); 
+</pre>                      
+            <br>  
+                                         </code>
+                                        </div>
+                                    </p>
+                                </article>
+                            </section>
+                            <hr>
+                            <br>
+                            <section id="keyboard-events">
+                                <header>
+                                    <h1><span class="red-brackets">&lt;</span>Keyboard Events<span class="red-brackets">&gt;</span></h1>
+                                </header>
+                                <article>
+                                    <p>
+                                         <br> 
+                                         <div class="example">
+                                             <code>
+                                                <h2>keydown</h2>
+                                                <br>
+<pre>
+element.addEventListener('keydown', ()=>{
+// Code to be executed when the event is fired
+}); 
+</pre>                      
+                <br>                   
+                                               <h2>keypress</h2>
+                <br>
+<pre>
+element.addEventListener('keypress', ()=>{
+// Code to be executed when the event is fired
+});  
+</pre>                      
+                <br>                   
+                                               <h2>keyup</h2>
+                <br>
+<pre>
+element.addEventListener('keyup', ()=>{
+// Code to be executed when the event is fired
+});
+</pre>       
+                
+                                             </code>
+                                            </div>
+                                        </p>
+                                    </article>
+                                </section>
+                                <hr>
+                                <br>
+                                <section id="errors">
+                                    <header>
+                                        <h1><span class="red-brackets">&lt;</span>Errors<span class="red-brackets">&gt;</span></h1>
+                                    </header>
+                                    <article>
+                                        <p>
+                                             <br> 
+                                             <div class="example">
+                                                 <code>
+                                                    <h2>try and catch</h2>
+                                                    <br>
+<pre>
+try {
+Block of code to try
+}
+catch(err) {
+Block of code to handle errors
+}
+</pre>                      
+                    <br>                   
+                                                   
+    
+                             </code>
+                            </div>
+                        </p>
+                    </article>
+                </section>
+                <hr>
+                <br>
+                <section id="window-methods">
+                    <header>
+                        <h1><span class="red-brackets">&lt;</span>Window Methods<span class="red-brackets">&gt;</span></h1>
+                    </header>
+                    <article>
+                        <p>
+                             <br> 
+                             <div class="example">
+                                 <code>
+                                    <h2>alert method</h2>
+                                    <br>
+<pre>
+alert()    
+</pre>                      
+    <br>                   
+                                   <h2>blur method</h2>
+    <br>
+<pre>
+blur()
+</pre>                      
+    <br>                   
+                                   <h2>setInterval</h2>
+    <br>
+<pre>
+setInterval(() => {
+// Code to be executed
+}, 1000);   
+</pre>                      
+    <br>                   
+                                   <h2>setTimeout</h2>
+    <br>
+<pre>
+setTimeout(() => {
+// Code to be executed
+}, 1000);    
+</pre>                      
+    <br>                   
+                                   <h2>close</h2>
+    <br>
+<pre>
+window.close()  
+</pre>                      
+    <br>                   
+                                   <h2>confirm</h2>
+    <br>
+<pre>
+window.confirm('Are you sure?')    
+</pre>                      
+    <br>                   
+                                    <h2>open</h2>
+    <br>
+<pre>
+window.open("https://www.codewithharry.com");
+</pre>                      
+    <br>                   
+                                    <h2>prompt</h2>
+    <br>
+<pre>
+var name = prompt("What is your name?", "Ram");    
+</pre>                      
+    <br>                   
+                                    <h2>scrollBy</h2>
+    <br>
+<pre>
+window.scrollBy(100, 0); // Scroll 100px to the right
+</pre>                      
+    <br>                   
+    <h2>scrollTo</h2>
+    <br>
+<pre>
+window.scrollTo(500, 0); // Scroll to horizontal position 500
+</pre>                      
+    <br>                   
+    <h2>clearInterval</h2>
+    <br>
+<pre>
+clearInterval(var)
+</pre>                      
+    <br>      
+    <h2>clearTimeout</h2>
+    <br>
+<pre>
+clearTimeout(var)
+</pre>                      
+    <br>  
+    <h2>stop</h2>
+    <br>
+<pre>
+stop()
+</pre>                      
+    <br>               
+        
+                                 </code>
+                                </div>
+                            </p>
+                        </article>
+                    </section>
+                    <hr>
+                    <br>
+                    <section id="query-elements">
+                        <header>
+                            <h1><span class="red-brackets">&lt;</span>Query/Get Elements<span class="red-brackets">&gt;</span></h1>
+                        </header>
+                        <article>
+                            <p>
+                                 <br> 
+                                 <div class="example">
+                                     <code>
+                                        <h2>querySelector</h2>
+                                        <br>
+<pre>
+document.querySelector('css-selectors')
+</pre>                      
+        <br>              
+        <h2>querySelectorAll</h2>
+                                        <br>
+<pre>
+document.querySelectorAll('css-selectors', ...)
+</pre>                      
+        <br>              
+        
+        <h2>getElementsByTagName</h2>
+                                        <br>
+<pre>
+document.getElementsByTagName('element-name')
+</pre>                      
+        <br> 
+        <h2>getElementsByClassName</h2>
+                                        <br>
+<pre>
+document.getElementsByClassName('class-name')
+</pre>                      
+        <br>   
+        <h2>Get Element by Id</h2>
+                                        <br>
+<pre>
+document.getElementById('id')
+</pre>                      
+        <br>              
+            
+                                     </code>
+                                    </div>
+                                </p>
+                            </article>
+                        </section>
+                        <hr>
+                        <br>
+                        <section id="creating-elements">
+                            <header>
+                                <h1><span class="red-brackets">&lt;</span>creating-elements<span class="red-brackets">&gt;</span></h1>
+                            </header>
+                            <article>
+                                <p>
+                                     <br> 
+                                     <div class="example">
+                                         <code>
+                                            <h2>createElement</h2>
+                                            <br>
+<pre>
+document.createElement('div')
+</pre>                      
+            <br>              
+                                            <h2>createTextNode</h2>
+                                            <br>
+<pre>
+document.createTextNode('some text here')
+</pre>                      
+            <br>              
+            
+            
+                                         </code>
+                                        </div>
+                                    </p>
+                                </article>
+                            </section>
+    
+
+            
+                                    
+
+                
+            
+            
+        
+    
+        
+    
+
+            
+            
+        </main>
+</body>
+</html>
